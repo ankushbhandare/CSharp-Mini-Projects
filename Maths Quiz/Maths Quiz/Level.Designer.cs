@@ -35,15 +35,18 @@
             this.tbarCount = new System.Windows.Forms.TrackBar();
             this.lblCount = new System.Windows.Forms.Label();
             this.lblValue = new System.Windows.Forms.Label();
+            this.lblIntro = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tbarCount)).BeginInit();
             this.SuspendLayout();
             // 
             // lblDifficulty
             // 
             this.lblDifficulty.AutoSize = true;
-            this.lblDifficulty.Location = new System.Drawing.Point(61, 80);
+            this.lblDifficulty.BackColor = System.Drawing.Color.Transparent;
+            this.lblDifficulty.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDifficulty.Location = new System.Drawing.Point(47, 80);
             this.lblDifficulty.Name = "lblDifficulty";
-            this.lblDifficulty.Size = new System.Drawing.Size(109, 13);
+            this.lblDifficulty.Size = new System.Drawing.Size(148, 15);
             this.lblDifficulty.TabIndex = 0;
             this.lblDifficulty.Text = "Select Difficulty Level";
             // 
@@ -54,35 +57,39 @@
             "Easy",
             "Medium",
             "Hard"});
-            this.cmbDifficulty.Location = new System.Drawing.Point(235, 80);
+            this.cmbDifficulty.Location = new System.Drawing.Point(264, 80);
             this.cmbDifficulty.Name = "cmbDifficulty";
             this.cmbDifficulty.Size = new System.Drawing.Size(121, 21);
             this.cmbDifficulty.TabIndex = 1;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(125, 186);
+            this.btnStart.BackColor = System.Drawing.Color.Transparent;
+            this.btnStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(105, 195);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.Size = new System.Drawing.Size(80, 23);
             this.btnStart.TabIndex = 2;
             this.btnStart.Text = "Start Quiz";
-            this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(264, 186);
+            this.btnExit.BackColor = System.Drawing.Color.Transparent;
+            this.btnExit.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(259, 195);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.Size = new System.Drawing.Size(80, 23);
             this.btnExit.TabIndex = 3;
             this.btnExit.Text = "Exit";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // tbarCount
             // 
             this.tbarCount.LargeChange = 2;
-            this.tbarCount.Location = new System.Drawing.Point(235, 125);
+            this.tbarCount.Location = new System.Drawing.Point(264, 128);
             this.tbarCount.Maximum = 20;
             this.tbarCount.Minimum = 1;
             this.tbarCount.Name = "tbarCount";
@@ -94,25 +101,43 @@
             // lblCount
             // 
             this.lblCount.AutoSize = true;
-            this.lblCount.Location = new System.Drawing.Point(61, 135);
+            this.lblCount.BackColor = System.Drawing.Color.Transparent;
+            this.lblCount.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCount.Location = new System.Drawing.Point(47, 135);
             this.lblCount.Name = "lblCount";
-            this.lblCount.Size = new System.Drawing.Size(139, 13);
+            this.lblCount.Size = new System.Drawing.Size(187, 15);
             this.lblCount.TabIndex = 5;
             this.lblCount.Text = "Select Number of Questions";
             // 
             // lblValue
             // 
             this.lblValue.AutoSize = true;
-            this.lblValue.Location = new System.Drawing.Point(356, 135);
+            this.lblValue.BackColor = System.Drawing.Color.Transparent;
+            this.lblValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValue.Location = new System.Drawing.Point(377, 136);
             this.lblValue.Name = "lblValue";
-            this.lblValue.Size = new System.Drawing.Size(0, 13);
+            this.lblValue.Size = new System.Drawing.Size(0, 17);
             this.lblValue.TabIndex = 6;
+            // 
+            // lblIntro
+            // 
+            this.lblIntro.AutoSize = true;
+            this.lblIntro.BackColor = System.Drawing.Color.Transparent;
+            this.lblIntro.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIntro.Location = new System.Drawing.Point(72, 24);
+            this.lblIntro.Name = "lblIntro";
+            this.lblIntro.Size = new System.Drawing.Size(313, 18);
+            this.lblIntro.TabIndex = 7;
+            this.lblIntro.Text = "Welcome To Maths Quiz by Ankush";
+            this.lblIntro.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Level
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Maths_Quiz.Properties.Resources.White_light_dot_with_blurs_christmas_background_vector_03;
             this.ClientSize = new System.Drawing.Size(444, 261);
+            this.Controls.Add(this.lblIntro);
             this.Controls.Add(this.lblValue);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.tbarCount);
@@ -124,7 +149,7 @@
             this.MaximizeBox = false;
             this.Name = "Level";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Level";
+            this.Text = "Maths Quiz by Ankush";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Level_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.tbarCount)).EndInit();
             this.ResumeLayout(false);
@@ -141,5 +166,6 @@
         private System.Windows.Forms.TrackBar tbarCount;
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.Label lblValue;
+        private System.Windows.Forms.Label lblIntro;
     }
 }

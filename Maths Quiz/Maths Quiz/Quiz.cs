@@ -95,7 +95,7 @@ namespace Maths_Quiz
                 }
                 else
                 {
-                    lblResult.Text = "Incorrect Answer";
+                    lblResult.Text = $"Incorrect Answer.\nCorrect Answer was : {answer}";
                 }
                 if (count < numberOfQuestions)
                 {
