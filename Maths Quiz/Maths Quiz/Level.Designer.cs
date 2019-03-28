@@ -81,6 +81,7 @@
             // 
             // tbarCount
             // 
+            this.tbarCount.LargeChange = 2;
             this.tbarCount.Location = new System.Drawing.Point(256, 94);
             this.tbarCount.Maximum = 20;
             this.tbarCount.Minimum = 1;

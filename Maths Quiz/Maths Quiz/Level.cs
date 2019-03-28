@@ -39,10 +39,18 @@ namespace Maths_Quiz
         private void btnStart_Click(object sender, EventArgs e)
         {
             SelectedLevel = cmbDifficulty.SelectedIndex;
-            Quiz quiz = new Quiz();
-            quiz.Owner = this;
-            this.Hide();
-            quiz.ShowDialog();
+            if (SelectedLevel == -1)
+            {
+                MessageBox.Show("Please Select Difficulty Level");
+            }
+            else
+            {
+                Quiz quiz = new Quiz();
+                quiz.Owner = this;
+                this.Hide();
+                quiz.GenerateQuiz(SelectedLevel, int.Parse(lblValue.Text));
+                quiz.ShowDialog();
+            }
         }
     }
 }

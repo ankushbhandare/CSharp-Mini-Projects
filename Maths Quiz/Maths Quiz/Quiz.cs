@@ -13,17 +13,19 @@ namespace Maths_Quiz
     public partial class Quiz : Form
     {
         Random random = new Random();
+        int count,numberOfQuestions;
         int answer;
         int totalCount = 0;
         int correctCount = 0;
         public Quiz()
         {
             InitializeComponent();
-            GenerateQuiz();
+            count = 1;
         }
 
-        private void GenerateQuiz()
+        public void GenerateQuiz(int selectedLevel,int count)
         {
+            numberOfQuestions = count;
             GenerateQuestion();
         }
 
@@ -84,12 +86,25 @@ namespace Maths_Quiz
                     lblResult.Text = "Incorrect Answer";
                 }
                 totalCount++;
-                GenerateQuestion();
             }
             catch(ArgumentException ex)
             {
                 MessageBox.Show("Please Enter Numbers Only!");
             }
+            if(count<numberOfQuestions)
+            {
+                count++;
+                GenerateQuestion();
+            }
+            else
+            {
+                showResult();
+            }
+        }
+
+        private void showResult()
+        {
+            MessageBox.Show("Quiz Over");
         }
 
         private void txtAnswer_KeyUp(object sender, KeyEventArgs e)
