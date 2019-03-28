@@ -1,0 +1,11 @@
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.exe.config
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.exe
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.pdb
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths_Quiz.Properties.Resources.resources
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths_Quiz.Quiz.resources
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.csproj.GenerateResource.cache
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.csproj.CoreCompileInputs.cache
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.exe
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.pdb
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.exe.CodeAnalysisLog.xml
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.exe.lastcodeanalysissucceeded
