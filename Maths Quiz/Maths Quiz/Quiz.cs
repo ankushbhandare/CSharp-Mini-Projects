@@ -14,6 +14,7 @@ namespace Maths_Quiz
     {
         Random random = new Random();
         int count,numberOfQuestions;
+        int minValue=0,maxValue;
         int answer;
         int totalCount = 0;
         int correctCount = 0;
@@ -26,14 +27,26 @@ namespace Maths_Quiz
         public void GenerateQuiz(int selectedLevel,int count)
         {
             numberOfQuestions = count;
+            if(selectedLevel == 0)
+            {
+                maxValue = 11;
+            }
+            else if(selectedLevel == 1)
+            {
+                maxValue = 51;
+            }
+            else
+            {
+                maxValue = 100;
+            }
             GenerateQuestion();
         }
 
         private void GenerateQuestion()
         {
             txtAnswer.Clear();
-            int number1 = random.Next(11);
-            int number2 = random.Next(11);
+            int number1 = random.Next(maxValue);
+            int number2 = random.Next(maxValue);
             int operation=random.Next(4);
             try
             {
@@ -53,7 +66,7 @@ namespace Maths_Quiz
                         break;
                     case 3:
                         if (number2 == 0)
-                            number2 = random.Next(1, 11);
+                            number2 = random.Next(1, maxValue);
                         lblQuestion.Text = (number1*number2).ToString() + " / " + number2.ToString() + " = ?";
                         answer = number1;
                         break;
@@ -104,7 +117,9 @@ namespace Maths_Quiz
 
         private void showResult()
         {
-            MessageBox.Show("Quiz Over");
+            DialogResult result = MessageBox.Show("Quiz Over", "Result", MessageBoxButtons.OK);
+            this.Close();
+            this.Owner.Show();
         }
 
         private void txtAnswer_KeyUp(object sender, KeyEventArgs e)
