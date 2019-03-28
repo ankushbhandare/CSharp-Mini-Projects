@@ -14,9 +14,10 @@ namespace Maths_Quiz
     {
         Random random = new Random();
         int count,numberOfQuestions;
-        int minValue=0,maxValue;
+        int maxValue;
         int answer;
         int correctCount = 0;
+        Boolean incorrectDataype= false;
         public Quiz()
         {
             InitializeComponent();
@@ -43,7 +44,6 @@ namespace Maths_Quiz
 
         private void GenerateQuestion()
         {
-            txtAnswer.Clear();
             int number1 = random.Next(maxValue);
             int number2 = random.Next(maxValue);
             int operation=random.Next(4);
@@ -97,34 +97,41 @@ namespace Maths_Quiz
                 {
                     lblResult.Text = "Incorrect Answer";
                 }
+                if (count < numberOfQuestions)
+                {
+                    count++;
+                    GenerateQuestion();
+                }
+                else
+                {
+                    showResult();
+                }
             }
             catch(ArgumentException ex)
             {
                 MessageBox.Show("Please Enter Numbers Only!");
+                incorrectDataype = true;
             }
-            if(count<numberOfQuestions)
-            {
-                count++;
-                GenerateQuestion();
-            }
-            else
-            {
-                showResult();
-            }
+            txtAnswer.Clear();
+            txtAnswer.Focus();
         }
 
         private void showResult()
         {
             float percentCorrect = ((float)correctCount / numberOfQuestions) * 100;
-            DialogResult result = MessageBox.Show($"Quiz Over. Your Result is: \n\n Correct: {correctCount}\n Total Questions: {numberOfQuestions}\n Percent: {percentCorrect.ToString("0.00")}", "Result", MessageBoxButtons.OK);
+            DialogResult result = MessageBox.Show($"Quiz Over. Your Result is: \n\n Correct: {correctCount}\n Total Questions: {numberOfQuestions}\n Percent: {percentCorrect.ToString("0.00")}%", "Result", MessageBoxButtons.OK);
             this.Close();
             this.Owner.Show();
         }
 
         private void txtAnswer_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter && incorrectDataype == false)
                 btnSubmitAnswer_Click(sender, e);
+            else
+            {
+                incorrectDataype = false;
+            }
         }
 
         private void Quiz_FormClosed(object sender, FormClosedEventArgs e)

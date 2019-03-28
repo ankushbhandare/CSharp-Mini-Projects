@@ -40,7 +40,7 @@ namespace Maths_Quiz
             // lblQuestion
             // 
             this.lblQuestion.AutoSize = true;
-            this.lblQuestion.Location = new System.Drawing.Point(200, 70);
+            this.lblQuestion.Location = new System.Drawing.Point(113, 70);
             this.lblQuestion.Name = "lblQuestion";
             this.lblQuestion.Size = new System.Drawing.Size(47, 13);
             this.lblQuestion.TabIndex = 0;
@@ -49,7 +49,7 @@ namespace Maths_Quiz
             // txtAnswer
             // 
             this.txtAnswer.AcceptsReturn = true;
-            this.txtAnswer.Location = new System.Drawing.Point(203, 103);
+            this.txtAnswer.Location = new System.Drawing.Point(116, 103);
             this.txtAnswer.Name = "txtAnswer";
             this.txtAnswer.Size = new System.Drawing.Size(100, 20);
             this.txtAnswer.TabIndex = 1;
@@ -57,7 +57,7 @@ namespace Maths_Quiz
             // 
             // btnSubmitAnswer
             // 
-            this.btnSubmitAnswer.Location = new System.Drawing.Point(203, 152);
+            this.btnSubmitAnswer.Location = new System.Drawing.Point(116, 152);
             this.btnSubmitAnswer.Name = "btnSubmitAnswer";
             this.btnSubmitAnswer.Size = new System.Drawing.Size(100, 23);
             this.btnSubmitAnswer.TabIndex = 2;
@@ -68,7 +68,7 @@ namespace Maths_Quiz
             // lblResult
             // 
             this.lblResult.AutoSize = true;
-            this.lblResult.Location = new System.Drawing.Point(200, 232);
+            this.lblResult.Location = new System.Drawing.Point(113, 232);
             this.lblResult.Name = "lblResult";
             this.lblResult.Size = new System.Drawing.Size(0, 13);
             this.lblResult.TabIndex = 3;
@@ -77,12 +77,14 @@ namespace Maths_Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(352, 297);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnSubmitAnswer);
             this.Controls.Add(this.txtAnswer);
             this.Controls.Add(this.lblQuestion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Quiz";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Quiz_FormClosed);
             this.ResumeLayout(false);

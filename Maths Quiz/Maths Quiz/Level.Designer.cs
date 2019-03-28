@@ -41,7 +41,7 @@
             // lblDifficulty
             // 
             this.lblDifficulty.AutoSize = true;
-            this.lblDifficulty.Location = new System.Drawing.Point(59, 56);
+            this.lblDifficulty.Location = new System.Drawing.Point(61, 80);
             this.lblDifficulty.Name = "lblDifficulty";
             this.lblDifficulty.Size = new System.Drawing.Size(109, 13);
             this.lblDifficulty.TabIndex = 0;
@@ -54,14 +54,14 @@
             "Easy",
             "Medium",
             "Hard"});
-            this.cmbDifficulty.Location = new System.Drawing.Point(62, 94);
+            this.cmbDifficulty.Location = new System.Drawing.Point(235, 80);
             this.cmbDifficulty.Name = "cmbDifficulty";
             this.cmbDifficulty.Size = new System.Drawing.Size(121, 21);
             this.cmbDifficulty.TabIndex = 1;
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(62, 162);
+            this.btnStart.Location = new System.Drawing.Point(125, 186);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(75, 23);
             this.btnStart.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(176, 162);
+            this.btnExit.Location = new System.Drawing.Point(264, 186);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 3;
@@ -82,7 +82,7 @@
             // tbarCount
             // 
             this.tbarCount.LargeChange = 2;
-            this.tbarCount.Location = new System.Drawing.Point(256, 94);
+            this.tbarCount.Location = new System.Drawing.Point(235, 125);
             this.tbarCount.Maximum = 20;
             this.tbarCount.Minimum = 1;
             this.tbarCount.Name = "tbarCount";
@@ -94,7 +94,7 @@
             // lblCount
             // 
             this.lblCount.AutoSize = true;
-            this.lblCount.Location = new System.Drawing.Point(253, 56);
+            this.lblCount.Location = new System.Drawing.Point(61, 135);
             this.lblCount.Name = "lblCount";
             this.lblCount.Size = new System.Drawing.Size(139, 13);
             this.lblCount.TabIndex = 5;
@@ -103,7 +103,7 @@
             // lblValue
             // 
             this.lblValue.AutoSize = true;
-            this.lblValue.Location = new System.Drawing.Point(380, 102);
+            this.lblValue.Location = new System.Drawing.Point(356, 135);
             this.lblValue.Name = "lblValue";
             this.lblValue.Size = new System.Drawing.Size(0, 13);
             this.lblValue.TabIndex = 6;
@@ -112,7 +112,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(444, 261);
             this.Controls.Add(this.lblValue);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.tbarCount);
@@ -120,7 +120,10 @@
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.cmbDifficulty);
             this.Controls.Add(this.lblDifficulty);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
             this.Name = "Level";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Level";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Level_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.tbarCount)).EndInit();
