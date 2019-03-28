@@ -16,7 +16,6 @@ namespace Maths_Quiz
         int count,numberOfQuestions;
         int minValue=0,maxValue;
         int answer;
-        int totalCount = 0;
         int correctCount = 0;
         public Quiz()
         {
@@ -98,7 +97,6 @@ namespace Maths_Quiz
                 {
                     lblResult.Text = "Incorrect Answer";
                 }
-                totalCount++;
             }
             catch(ArgumentException ex)
             {
@@ -117,7 +115,8 @@ namespace Maths_Quiz
 
         private void showResult()
         {
-            DialogResult result = MessageBox.Show("Quiz Over", "Result", MessageBoxButtons.OK);
+            float percentCorrect = ((float)correctCount / numberOfQuestions) * 100;
+            DialogResult result = MessageBox.Show($"Quiz Over. Your Result is: \n\n Correct: {correctCount}\n Total Questions: {numberOfQuestions}\n Percent: {percentCorrect.ToString("0.00")}", "Result", MessageBoxButtons.OK);
             this.Close();
             this.Owner.Show();
         }
