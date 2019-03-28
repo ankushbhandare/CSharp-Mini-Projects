@@ -97,5 +97,10 @@ namespace Maths_Quiz
             if (e.KeyCode == Keys.Enter)
                 btnSubmitAnswer_Click(sender, e);
         }
+
+        private void Quiz_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            this.Owner.Show();
+        }
     }
 }

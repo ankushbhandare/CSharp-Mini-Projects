@@ -7,5 +7,5 @@ C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.csproj.Ge
 C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.csproj.CoreCompileInputs.cache
 C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.exe
 C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.pdb
-C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.exe.CodeAnalysisLog.xml
-C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.exe.lastcodeanalysissucceeded
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.csprojAssemblyReference.cache
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths_Quiz.Level.resources

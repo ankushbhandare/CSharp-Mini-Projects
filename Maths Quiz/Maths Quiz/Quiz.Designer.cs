@@ -84,6 +84,7 @@ namespace Maths_Quiz
             this.Controls.Add(this.lblQuestion);
             this.Name = "Quiz";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Quiz_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 
