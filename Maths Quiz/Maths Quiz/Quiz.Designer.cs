@@ -84,7 +84,7 @@ namespace Maths_Quiz
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Maths_Quiz.Properties.Resources.White_light_dot_with_blurs_christmas_background_vector_03;
+            this.BackgroundImage = global::Maths_Quiz.Properties.Resources.background;
             this.ClientSize = new System.Drawing.Size(352, 297);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnSubmitAnswer);

@@ -9,3 +9,8 @@ C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.exe
 C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.pdb
 C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.csprojAssemblyReference.cache
 C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths_Quiz.Level.resources
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.exe.manifest
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\bin\Debug\Maths Quiz.application
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.TrustInfo.xml
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.exe.manifest
+C:\Users\ankus\Source\Repos\Maths Quiz\Maths Quiz\obj\Debug\Maths Quiz.application
